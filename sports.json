@@ -1,0 +1,57 @@
+{
+  "id": "all.iptv.stremio.add-on",
+  "version": "1.2.2",
+  "name": "All IPTV Sports",
+  "description": "Watch daily updated premium IPTV sports channels. Stream top favorites including ESPN Deportes, Fox Sports and many more.",
+  "logo": "https://fun.lnpx.workers.dev/logo.webp",
+  "configurationURL": "https://fun.lnpx.workers.dev/configure",
+  "resources": [
+    {
+      "name": "catalog",
+      "types": [
+        "tv"
+      ],
+      "idPrefixes": [
+        "ch_"
+      ]
+    },
+    {
+      "name": "meta",
+      "types": [
+        "tv"
+      ],
+      "idPrefixes": [
+        "ch_"
+      ]
+    },
+    {
+      "name": "stream",
+      "types": [
+        "tv"
+      ],
+      "idPrefixes": [
+        "ch_"
+      ]
+    }
+  ],
+  "types": [
+    "tv"
+  ],
+  "catalogs": [
+    {
+      "id": "cat_sports",
+      "type": "tv",
+      "name": "All IPTV Sports",
+      "extra": [
+        {
+          "name": "skip",
+          "isRequired": false
+        }
+      ]
+    }
+  ],
+  "behaviorHints": {
+    "configurable": true,
+    "configurationRequired": false
+  }
+}
